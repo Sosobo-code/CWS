@@ -25,6 +25,33 @@
         </div>
     </nav>
 </section>
+
+<button id="cycleButton">Cycle Color</button>
+<button id="changeButton">Change Color</button>
+
+<script>
+    const cycleButton = document.getElementById("cycleButton");
+    const changeButton = document.getElementById("changeButton");
+    const colours = ["#FF0000", "#FF7F00", "#FFFF00", "#00FF00", "#0000FF", "#4B0082", "#8F00FF"];
+    let currentIndex = 0;
+
+    function cycleColour() {
+        document.body.style.backgroundColor = colours[currentIndex];
+        currentIndex++;
+        if (currentIndex >= colours.length) {
+            currentIndex = 0;
+        }
+    }
+
+    function changeColour(){
+        const randomIndex = Math.floor(Math.random() * colours.length);
+        document.body.style.backgroundColor = colours[randomIndex];
+    }
+
+    cycleButton.addEventListener("click", cycleColour);
+    changeButton.addEventListener("click", changeColour);
+</script>
+
 <footer>
     <p>Varun's Car Wraps: 2024</p>
     <p><a href="exampleemail@mail.com">exampleemail@mail.com</a></p>
