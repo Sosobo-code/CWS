@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="menubar.js"></script>
     <title>Colour</title>
 </head>
 <body>
 
-<section id="nav">
-    <nav role="navigation">
-        <div id="menuToggle">
-            <input type="checkbox"/>
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <ul id="menu">
-                <a href="index.html"><li>Home</li></a>
-                <a href="#"><li>About</li></a>
-                <a href="store.html"><li>Store</li></a>
-                <a href="colour.html"><li>Colour Picker</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-            </ul>
-        </div>
-    </nav>
-</section>
+<nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="colour.html">Colour Picker</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">CWS</a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="store.html">Store</a></li>
+        <li class="hideOnMobile"><a href="colour.html">Colour Picker</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
 
 <button id="cycleButton">Cycle Color</button>
 <button id="changeButton">Change Color</button>
