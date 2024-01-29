@@ -4,7 +4,7 @@
 }
 
 nav{
-    background-color: white;
+    background-color: #000000;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 }
 nav ul{
@@ -24,7 +24,8 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: white;
+    font-weight: normal;
 }
 nav a:hover{
     background-color: #f2f2f2;
