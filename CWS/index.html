@@ -75,5 +75,16 @@
     <p><a href="exampleemail@mail.com">exampleemail@mail.com</a></p>
 </footer>
 
+<script>
+    const video = document.querySelector('video');
+
+    window.addEventListener('blur', function() {
+        video.pause();
+    });
+    window.addEventListener('focus', function() {
+        video.play();
+    });
+</script>
+
 </body>
 </html>
