@@ -309,6 +309,13 @@ footer {
     transition: all .3s;
 }
 
+.sitelogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
 @keyframes infiniteupdown {
     0% {
         transform: translateY(20px);
