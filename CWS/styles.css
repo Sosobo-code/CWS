@@ -381,16 +381,11 @@ footer {
     animation-timing-function: ease;
     transition: all .3s;
 }
-
-/* I want the logo to be in the top left corner of the page fitting inside of the nav bar  */
 .sitelogo {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 10px;
-	margin: 10px;
-	width: 15%;
-	z-index: 999;
+	height: 100%;
+	padding: 0 30px;
+	display: flex;
+	align-items: center;
 }
 
 @keyframes infiniteupdown {
